@@ -1,0 +1,291 @@
+/* Universal styles */
+
+body {
+  background-image:url('images/scalloppattern.png');
+}
+
+p,
+ul,
+strong {
+  font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  color: #0c0c0c;
+  line-height: 1.75;
+}
+
+strong {
+  color: orangered;
+  font-weight: bold;
+}
+
+hr {
+  margin: 30px 0px;
+  color: lightgrey;
+}
+
+h1 {
+  font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight:lighter;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #10a31a;
+  padding: 10px 0px;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+em {
+  font-style: italic;
+}
+
+.main-title {
+  font-family: serif;
+  font-size: 50px;
+  position: relative;
+}
+
+.section-bkgd {
+  clear: both; /* because of the float: left on the image row above */
+  background-color: hsla(0, 0%, 100%, 0.6);
+  padding: 100px 150px;
+}
+
+/* Header elements */
+
+.header-top {
+  padding: 30px 100px;
+  height: 100px;
+}
+
+.head-logo {
+width: 400px;
+position: relative;
+float: left;
+top: 10px;
+z-index: 100;
+}
+
+.head-subtitle {
+  float: right;
+  text-transform: uppercase;
+  position: relative;
+  top: 59px;
+}
+
+/* Image collage */
+
+.img-row {
+  width: 100%;
+  height: auto;
+  display: block;
+   box-shadow: 0px 0px 15px 0px hsla(240, 2%, 10%, 0.9); /* originally didnt work...but works now since adding in the .img-row:after pseudo class */
+}
+
+/* SOLUTION for making dropshadow behind image collage show up, */
+.img-row:after {
+  clear: both;
+  display:block;
+  content:""; /* putting a placeholder in there, without this, the box-shadow does not have any 'content' for it to wrap around, which is why it doesn't show */
+}
+
+.img-nogap {
+  float: left; /* Removes gap between images */
+  /*box-shadow: 0px 0px 15px hsla(240, 2%, 10%, 0.9);*/
+}
+
+/*image width of food images below header - 100 divide by 5 = 20%*/
+.width20percent {
+  height: auto;
+  width: 20%;
+}
+
+/*for all images taking up 25% of width*/
+.width25percent {
+  height: auto;
+  width: 25%;
+}
+
+/*for all images taking up 50% of width*/
+.width50percent {
+  height: auto;
+  width: 50%;
+}
+
+/* Image grid for 'Nourish your body' section */
+
+.imgbox-left {
+  display: inline;
+  float: left;
+  width: 38.3%;
+}
+
+.imgbox-right {
+  display: inline;
+  float: right;
+  width: 61.7%;
+}
+
+/* For photos within body text - styled with border & box shadow */
+
+.photo-left {
+  border: 7px solid white;
+  box-shadow: 1px 1px 9px #888888;
+  margin: 0px 20px 20px 0px;
+  float: left;
+}
+
+.photo-right {
+  border: 8px solid white;
+  box-shadow: 4px 4px 8px #666666;
+  margin: 20px 0px 0px 20px;
+  float: right;
+}
+
+/* For photos within culinary events section - styled with border & box shadow */
+
+.photo-eventhead {
+  width: 455px;
+  height: auto;
+  border: 7px solid white;
+  border-bottom: none;
+  box-shadow: 1px 1px 9px #888888;
+  margin: 0px 20px 20px 0px;
+  float: left;
+}
+
+.eventimgbox-left {
+  display: inline;
+  float: left;
+  width: 66.2%;
+}
+
+.eventimgbox-right {
+  display: inline;
+  float: right;
+  width: 32.2%;
+}
+
+/* EH Bio Section styles */
+
+.section-bio {
+  padding: 50px 150px;
+}
+
+.quote {
+  background-color: hsla(41, 100%, 50%, 0.5);
+  font-family: 'Copse', serif;
+  font-size: 24px;
+  padding: 25px;
+}
+
+/* Culinary Events Section */
+
+.section-events {
+  background-color: hsla(123, 55%, 78%, 0.6);
+  padding: 50px 150px;
+}
+
+.workshop1 {
+  float: left;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  padding-left: 150px;
+  padding-top: 40px;
+  padding-right: 50px;
+  width: 490px;
+}
+
+.p-subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.event-text {
+  font-size: 16px;
+}
+
+li {
+  font-size: 16px;
+  list-style-type: circle;
+  list-style-position: inside;
+  line-height: 2;
+  padding:0px 0px 0px 10px;
+}
+
+.button {
+  display: block;
+  font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: orangered;
+  padding: 10px 15px;
+  width: 180px;
+  box-shadow: 1px 1px 7px #888888;
+}
+
+/* Aside */
+.aside-section {
+  width: 310px;
+  float:right;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  padding: 40px 150px 30px 50px;
+}
+
+.aside-title {
+  color: black;
+  font-size: 26px;
+}
+
+/* unvisited link */
+a:link {
+    color: orangered;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: orangered;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    background-color: orangered;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: orangered;
+  background-color: white;
+  text-decoration: none;
+}
+
+/* footer elements */
+
+#footer-text {
+  font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  color: #0c0c0c;
+}
+
+footer {
+  background-color: hsla(210, 1%, 71%, 0.2);
+  border-top: 1px solid slategrey;
+  clear:both;
+  padding: 20px 150px 20px 150px;
+}
+.footer {
+  float: left;
+}
+.contact {
+  display: inline;
+  float: right;
+}
