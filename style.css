@@ -10,7 +10,8 @@ strong {
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 17px;
   color: #0c0c0c;
-  line-height: 1.75;
+  line-height: 1.6;
+  /*line-height: 1.75;*/
 }
 
 strong {
@@ -23,13 +24,17 @@ hr {
   color: lightgrey;
 }
 
+@fontface {
+
+}
+
 h1 {
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight:lighter;
   text-transform: uppercase;
   font-size: 40px;
   color: #10a31a;
-  padding: 10px 0px;
+  padding: 20px 0px;
 }
 
 h2 {
@@ -49,33 +54,74 @@ em {
   position: relative;
 }
 
-.section-bkgd {
+/* same padding for all sections */
+.section-bkgd,
+.section-bio,
+.section-events,
+.workshop1,
+footer {
   clear: both; /* because of the float: left on the image row above */
   background-color: hsla(0, 0%, 100%, 0.6);
-  padding: 100px 150px;
+  padding: 30px 40px;
+  /* padding: 100px 150px;*/  /*for desktop*/
 }
 
 /* Header elements */
 
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header-top {
-  padding: 30px 100px;
-  height: 100px;
+  padding: 30px 40px;
+  /*padding: 30px 100px;*/
 }
 
 .head-logo {
-width: 400px;
-position: relative;
-float: left;
-top: 10px;
-z-index: 100;
+  width: 300px;
+  /*width: 400px;*/
+  position: relative;
+  float: left;
+  /*top: 10px;
+  z-index: 100;*/
 }
 
 .head-subtitle {
   float: right;
   text-transform: uppercase;
-  position: relative;
+  /*position: relative;*/
   top: 59px;
 }
+
+/* Navigation Elements */
+
+nav {
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 20px;}
+
+.navigation li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navigation:hover {
+
+}
+
+
 
 /* Image collage */
 
@@ -177,9 +223,9 @@ z-index: 100;
 
 /* EH Bio Section styles */
 
-.section-bio {
+/*.section-bio {
   padding: 50px 150px;
-}
+}*/ /*combined this with section-bkgd class*/
 
 .quote {
   background-color: hsla(41, 100%, 50%, 0.5);
@@ -192,16 +238,17 @@ z-index: 100;
 
 .section-events {
   background-color: hsla(123, 55%, 78%, 0.6);
-  padding: 50px 150px;
+  /*padding: 50px 150px;*/
 }
 
 .workshop1 {
-  float: left;
+  /*float: left;*/
   background-color: hsla(0, 0%, 100%, 0.6);
-  padding-left: 150px;
+  /*padding-left: 150px;
   padding-top: 40px;
-  padding-right: 50px;
-  width: 490px;
+  padding-right: 50px;*/
+  /*width: 490px;*/
+  display: block;
 }
 
 .p-subtitle {
@@ -234,10 +281,15 @@ li {
   box-shadow: 1px 1px 7px #888888;
 }
 
+.button:hover {
+  background-color: green;
+
+}
+
 /* Aside */
 .aside-section {
   width: 310px;
-  float:right;
+  /*float:right;*/
   background-color: hsla(0, 0%, 100%, 0.6);
   padding: 40px 150px 30px 50px;
 }
@@ -275,6 +327,23 @@ a:active {
 
 /* footer elements */
 
+.social ul {
+  text-align: center;
+}
+
+.social li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0px 30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.social li a {
+  color: orangered;
+}
+
+
 #footer-text {
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
@@ -282,14 +351,19 @@ a:active {
 }
 
 footer {
-  background-color: hsla(210, 1%, 71%, 0.2);
+  background-color: hsla(60, 0%, 67%, 0.8);
   border-top: 1px solid slategrey;
   clear:both;
-  padding: 20px 150px 20px 150px;
+  /*padding: 20px 150px 20px 150px;*/
+  box-shadow: 0px -2px 15px hsla(0, 0%, 40%, 0.5);
 }
+
 .footer {
-  float: left;
+  /*float: left;*/
+  display: flex;
+  align-items: center;
 }
+
 .contact {
   display: inline;
   float: right;
