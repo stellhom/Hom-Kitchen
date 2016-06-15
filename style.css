@@ -28,12 +28,23 @@ hr {
   color: lightgrey;
 }
 
-@fontface {
+@font-face {
+    font-family: 'corbertregular';
+    src: url('fonts/Corbert-Regular-webfont.eot');
+    src: url('fonts/Corbert-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Corbert-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Corbert-Regular-webfont.woff') format('woff'),
+         url('fonts/Corbert-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Corbert-Regular-webfont.svg#corbertregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
+
 h1 {
-  font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'corbertregular', Helvetica, Arial, sans-serif;
+  letter-spacing: -2px;
   font-weight:lighter;
   text-transform: uppercase;
   font-size: 3.5rem;
@@ -110,7 +121,7 @@ header {
   justify-content: center;
   /*justify-content: space-between;*/ /*use for hom kitchen left and cooking since 1980 right*/
   /*align-items: center;*/ /*use for hom kitchen left and cooking since 1980 right*/
-  padding: 30px 40px;
+  padding: 20px 0px;
 }
 
 /*remove this class - target header tag instead - is this better than creating a class?*/
@@ -146,15 +157,18 @@ nav {
   clear: both;
   display: flex;
   justify-content: center;
-  background-color: #e20000;
-
+  /*background-color: #e20000;*/
+  background-image: linear-gradient(
+      180deg, #e20000 0%, #e20000 20%, #8e0404 100%
+   );
+  margin-bottom: 30px;
 }
 
 .navigation ul {
   list-style-type: none;
   margin: 0px;
-  padding: 20px 80px;
-  border-top: 1px solid darkgrey;
+  padding: 10px 50px;
+  /*border-top: 1px solid darkgrey;*/
 }
 
 
@@ -290,7 +304,7 @@ nav {
   padding: 25px;
 }
 
-/* Culinary Events Section */
+/* CULINARY EVENTS ELEMENTS */
 
 .section-events {
   background-color: hsla(123, 55%, 78%, 0.6);
@@ -329,13 +343,15 @@ li {
 .button {
   display: block;
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  border-radius: 8px;
   color: white;
   text-transform: uppercase;
   font-weight: bold;
   background-color: orangered;
   padding: 10px 15px;
-  width: 180px;
-  box-shadow: 1px 1px 7px #888888;
+  width: 200px;
+  box-shadow: 2px 2px 6px 0px #888888; /*X offset, Y offset, blur radius, spread radius (optional), colour*/
 }
 
 .button:hover {
@@ -359,7 +375,7 @@ li {
 
 
 
-/* footer elements */
+/* FOOTER ELEMENTS */
 
 .social ul {
   text-align: center;
@@ -376,7 +392,6 @@ li {
 .social li a {
   color: orangered;
 }
-
 
 #footer-text {
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
