@@ -11,19 +11,19 @@
   </head>
 
   <body>
-    <header class="header-top">
-      <div class="head-logo">
-        <img src="images/homkitchen-logo.svg" />
+    <header>
+      <div class="header-top">
+        <a href="index.html" alt="home"><img class="head-logo" src="images/homkitchen-logo.svg" /></a>
       </div>
-      <div class="head-subtitle">
+      <!-- <div class="head-subtitle">
         <p>Cooking since 1980</p>
-      </div>
+      </div> -->
     </header>
     <nav>
       <div class="navigation">
       <ul>
+        <li><a href="estella.html">About</a></li>
         <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="estella.html">Estella</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -46,8 +46,8 @@
       </div>
 
         <section class="section-bkgd">
-          <h1>Love your food.</h1><br />
-          <p>
+          <h1>Love your food.</h1>
+          <p class="content">
             <strong>HOM Kitchen</strong> grew out of a love for home cooking and enjoying all the foods we love. Food is beautiful because it’s universal, like nothing else. The kitchen is the heart of the home. When you cook at home you are cooking from the heart. Food should always be healthy, tasty and make you smile.
           </p>
         </section>
@@ -58,9 +58,9 @@
       </div>
 
         <section class="section-bkgd">
-          <h1>Come Together.</h1><br />
+          <h1>Come Together.</h1>
 
-          <p>
+          <p class="content">
             In many cultures eating is about spending quality time with family and friends. <strong>Food has the power to bring people together.</strong> When we gather around the same table, we make friends, share culture and celebrate moments together.
           </p>
         </section>
@@ -85,9 +85,9 @@
       </div>
 
         <section class="section-bkgd">
-          <h1>Nourish your body.</h1><br />
+          <h1>Nourish your body.</h1>
 
-          <p>
+          <p class="content">
             Food is meant to nourish us. It can heal us when we are sick, give us energy, and fuel our active pursuits. By consuming nutrient dense, real, whole foods, we nourish and heal our bodies from the inside out. The truth is that when we give our bodies the right fuel, we don’t feel hungry or guilt. Instead, <strong>we thrive and feel amazing!</strong>
           </p>
         </section>
@@ -98,8 +98,8 @@
       </div>
 
         <section class="section-bkgd section-bio">
-          <h1>Meet Estella Hom</h1><br />
-          <p>
+          <h1>Meet Estella Hom</h1>
+          <p class="content">
             Graphic designer, kettlebell lifter, Hom Kitchen chef, and foodie. Estella was an 80’s child growing up in Downtown Toronto’s Chinatown scene, surrounded by tons of fresh produce and delicious restaurant food. Having spent most of her early childhood years hanging in her grandparents’ Chinese restaurant and sous chef to her parents while growing up, these experiences lead to a lifelong passion for food and cooking (and of course eating!).
           </p><br />
 
@@ -129,8 +129,8 @@
         </div>
 
           <section class="section-bkgd section-events">
-            <h1>Culinary Events</h1><br />
-            <p>
+            <h1>Culinary Events</h1>
+            <p class="content">
               For a limited time, Estella will be teaching workshops at Williams Sonoma on Bloor St. This is a limited time engagement, so reserve your spot and take advantage of this amazing opportunity!
             </p><br />
             <p>
@@ -220,8 +220,8 @@
           </section>
 
           <aside class="aside-section">
-            <h1 class="aside-title">People are talking!</h1><br />
-            <p><em>"Green smoothies changed my life! Ever since adding them to my diet, I have experienced improved digestion, less bloating, and plenty of energy to help fuel me through my kettlebell lifting sessions!"</em></p><br /><br />
+            <h1 class="aside-title">People are talking!</h1>
+            <p class="content"><em>"Green smoothies changed my life! Ever since adding them to my diet, I have experienced improved digestion, less bloating, and plenty of energy to help fuel me through my kettlebell lifting sessions!"</em></p><br /><br />
 
             <p><em>"I didn't think food could affect so many aspects of my health. This was an eye opener for me! While enjoying all the Hom Kitchen recipes, it has helped me clear up my skin and I am essentially healing myself from the inside out. The best part was that it didn't feel like I was depriving myself of good food. Everything is delicious!"</em></p><br /><br />
 
@@ -232,7 +232,68 @@
             <p><em>"I used to always feel sick after eating certain foods but not anymore! Estella taught me how to target my food allergies and enjoy all my favorite foods again just by making small substitutions to the recipes. It feels great to be enjoying my meals while knowing that I am fueling my body and no longer causing inflammation."</em></p>
 
             <hr />
-            <h1 class="aside-title">Contact Estella Hom</h1><br />
+        			<h1>Contact Estella Hom</h1>
+        		<div id="con-head">
+        			<h2 class="sub-title">Contact Me</h2>
+        		</div>
+        		<div id="com-email">
+        			<p><span id="com-text">Send me your comments!</span></p>
+        			<form action="mailto:estellahom@gmail.com" method="post" enctype="multipart/form-data" name="emailform">
+        				<label>
+        					<p>Name:</p><br />
+        					<input type="text" name="name" required="required" />
+        				</label>
+        				<br />
+        				<br />
+        				<label>
+        					<p>Comments:</p><br />
+        					<textarea rows="5" cols="25" name="comments" required="required"></textarea><br />
+        					<br />
+        					<input type="image" src="images/Moog-comment.png" />
+        				</label>
+        			</form>
+        		</div>
+        		<br />
+        		<br />
+        		<div id="subsc-head">
+        			<h2 class="sub-title">Subscribe</h2>
+        		</div>
+        		<div id="subscription">
+        			<form action="URL.com/Subscribers.php" method="post" name="subform">
+        				<label>
+        					<span id="subscribe-text">Enter your email to recieve our weekly newsletter.</span><br />
+        					<input type="email" name="email" required="required" />
+        					<input type="image" src="images/Moog-scribe.png" />
+        				</label>
+        			</form>
+        		</div>
+<br>
+<br>
+<br>
+
+            <form action="#" method="post" id="contact-form">
+  <div>
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" />
+  </div>
+
+  <div>
+    <label for="message-type">Type of Message:</label>
+    <select name="message-type" id="message-type">
+      <option value="hello">Friendly hello</option>
+      <option value="catch-up">Wanting to catch up</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="message">Your Message</label>
+    <textarea name="message" id="message" cols="40" rows="10"></textarea>
+  </div>
+
+  <div>
+    <input type="submit" value="Submit" />
+  </div>
+</form>
             <p>Email: <a href="mailto:me@estellahom.com">estellahom@gmail.com</a></p><br />
             <p class="event-text">
               For tips, recipes, and daily inspiration, follow me on <a target="_blank" href="https://www.instagram.com/stellhom/?hl=en">Instagram</a>, <a target="_blank" href="https://twitter.com/stellhom">Twitter</a>, and <a target="_blank" href="https://www.facebook.com/estellahom">Facebook</a>
@@ -245,7 +306,7 @@
             <p class="event-text">Toronto, ON M5S 3L3</p>
             <p class="event-text">Phone:(416) 962-9455</p>
             <p><a href="https://www.google.ca/maps/place/100+Bloor+St+W+%233,+Toronto,+ON+M5S+3L7/@43.6697101,-79.393407,17z/data=!3m1!4b1!4m5!3m4!1s0x882b34affbf70081:0xe3227d04fd5ed749!8m2!3d43.6697101!4d-79.3912183" target="_blank">Directions</a></p><br />
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.9644062414486!2d-79.39340698450174!3d43.669710079120705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34affbf70081%3A0xe3227d04fd5ed749!2s100+Bloor+St+W+%233%2C+Toronto%2C+ON+M5S+3L7!5e0!3m2!1sen!2sca!4v1464509656269" width="325" height="500" frameborder="0" style="border:0" allowfullscreen></iframe><br /><br />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5771.928820091664!2d-79.391218!3d43.66971!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34affbf70081%3A0xe3227d04fd5ed749!2s100+Bloor+St+W+%233%2C+Toronto%2C+ON+M5S+3L7%2C+Canada!5e0!3m2!1sen!2sca!4v1465964089468" width="100%" height="600px" frameborder="0" style="border:0" allowfullscreen></iframe><br /><br />
         </aside>
       </article>
 

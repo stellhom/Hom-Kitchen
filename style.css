@@ -4,6 +4,10 @@ body {
   background-image:url('images/scalloppattern.png');
 }
 
+.content {
+  padding-top: 15px;
+}
+
 p,
 ul,
 strong {
@@ -32,7 +36,8 @@ h1 {
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight:lighter;
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 3.5rem;
+  /*font-size: 40px;*/
   color: #10a31a;
   padding: 20px 0px;
 }
@@ -40,7 +45,8 @@ h1 {
 h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.5rem;
+  /*font-size: 20px;*/
   line-height: 1.5;
 }
 
@@ -62,32 +68,69 @@ em {
 footer {
   clear: both; /* because of the float: left on the image row above */
   background-color: hsla(0, 0%, 100%, 0.6);
-  padding: 30px 40px;
+  padding: 40px 50px;
   /* padding: 100px 150px;*/  /*for desktop*/
 }
 
-/* Header elements */
+/* LINKS */
 
-header {
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+/* unvisited link */
+a:link {
+    color: orangered;
+    text-decoration: none;
 }
 
-.header-top {
+/* visited link */
+a:visited {
+    color: orangered;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    background-color: orangered;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: orangered;
+  background-color: white;
+  text-decoration: none;
+}
+
+/* HEADER ELEMENTS */
+
+/* main container */
+header {
+  /*height: 80px;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*justify-content: space-between;*/ /*use for hom kitchen left and cooking since 1980 right*/
+  /*align-items: center;*/ /*use for hom kitchen left and cooking since 1980 right*/
   padding: 30px 40px;
+}
+
+/*remove this class - target header tag instead - is this better than creating a class?*/
+.header-top {
+  /*padding: 30px 40px;*/
   /*padding: 30px 100px;*/
 }
 
 .head-logo {
-  width: 300px;
-  /*width: 400px;*/
-  position: relative;
-  float: left;
+  width: 700px;
+  height: auto;
+ /*position: relative;*/
+  /*float: left;*/
   /*top: 10px;
   z-index: 100;*/
+}
+
+.head-logo:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .head-subtitle {
@@ -97,27 +140,39 @@ header {
   top: 59px;
 }
 
-/* Navigation Elements */
+/* NAVIGATION ELEMENTS */
 
 nav {
   clear: both;
   display: flex;
   justify-content: center;
+  background-color: #e20000;
+
 }
 
 .navigation ul {
   list-style-type: none;
-  margin: 0;
-  padding: 20px 20px;}
+  margin: 0px;
+  padding: 20px 80px;
+  border-top: 1px solid darkgrey;
+}
+
 
 .navigation li {
   display: inline;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
+  padding: 0px 20px;
+}
+
+.navigation a {
+  color: white;
 }
 
 .navigation:hover {
+  color: purple;
+  text-decoration:none;
 
 }
 
@@ -200,7 +255,8 @@ nav {
 /* For photos within culinary events section - styled with border & box shadow */
 
 .photo-eventhead {
-  width: 455px;
+  width: 100%;
+  /*width: 455px;*/
   height: auto;
   border: 7px solid white;
   border-bottom: none;
@@ -254,6 +310,7 @@ nav {
 .p-subtitle {
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1rem;
   line-height: 1;
 }
 
@@ -288,42 +345,19 @@ li {
 
 /* Aside */
 .aside-section {
-  width: 310px;
+  /*width: 310px;*/
   /*float:right;*/
   background-color: hsla(0, 0%, 100%, 0.6);
-  padding: 40px 150px 30px 50px;
+  padding: 40px 50px;
+  /*padding: 40px 150px 30px 50px;*/
 }
 
-.aside-title {
+/*.aside-title {
   color: black;
   font-size: 26px;
-}
+}*/
 
-/* unvisited link */
-a:link {
-    color: orangered;
-    text-decoration: none;
-}
 
-/* visited link */
-a:visited {
-    color: orangered;
-    text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-    color: white;
-    background-color: orangered;
-    text-decoration: none;
-}
-
-/* selected link */
-a:active {
-  color: orangered;
-  background-color: white;
-  text-decoration: none;
-}
 
 /* footer elements */
 
