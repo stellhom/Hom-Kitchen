@@ -1,4 +1,4 @@
-/* Universal styles */
+/* UNIVERSAL STYLES */
 
 body {
   background-image:url('images/scalloppattern.png');
@@ -63,11 +63,11 @@ em {
   font-style: italic;
 }
 
-.main-title {
+/*.main-title {
   font-family: serif;
   font-size: 50px;
   position: relative;
-}
+}*/
 
 /* same padding for all sections */
 .section-bkgd,
@@ -335,8 +335,8 @@ nav {
   font-size: 16px;
 }
 
-/* makes the overflow text in list items indent! */
-ul {
+/* makes the overflow text in list items indent */
+.event-list ul {
   list-style: none;
   margin-left: 0;
   padding-left: 1em;
@@ -353,7 +353,7 @@ li {
 
 .button {
   display: block;
-  font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: effra, Avenir, "Helvetica Neue", Helvetica,Arial,sans-serif;
   font-size: 18px;
   border-radius: 8px;
   color: white;
