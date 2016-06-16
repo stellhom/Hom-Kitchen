@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hom Kitchen | Cooking delicious food since 1980</title>
       <link rel="stylesheet" type="text/css" href="reset.css" />
       <link rel="stylesheet" type="text/css" href="style.css" />
@@ -11,23 +12,33 @@
   </head>
 
   <body>
-    <header class="header-top">
-      <img class="head-logo" src="images/homkitchen-logo.svg" />
-      <div class="head-subtitle">
-        <p>Cooking since 1980</p>
+    <header>
+      <div class="header-top">
+        <a href="index.html" alt="home"><img class="head-logo" src="images/homkitchen-logo.svg" /></a>
       </div>
+      <!-- <div class="head-subtitle">
+        <p>Cooking since 1980</p>
+      </div> -->
     </header>
-
+    <nav>
+      <div class="navigation">
+      <ul>
+        <li><a href="estella.html">About</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+</nav>
     <article>
-
       <div class="img-row">
         <img class="img-nogap width50percent" src="images/eh-childhood.jpg" alt="Estella as a child" />
         <img class="img-nogap width50percent" src="images/eh-cooking.jpg" alt="Estella cooking" />
       </div>
 
         <section class="section-bkgd section-bio">
-          <h1>Meet Estella Hom</h1><br />
-          <p>
+          <h1>Meet Estella Hom</h1>
+          <p class="content">
             Graphic designer, kettlebell lifter, Hom Kitchen chef, and foodie. Estella was an 80’s child growing up in Downtown Toronto’s Chinatown scene, surrounded by tons of fresh produce and delicious restaurant food. Having spent most of her early childhood years hanging in her grandparents’ Chinese restaurant and sous chef to her parents while growing up, these experiences lead to a lifelong passion for food and cooking (and of course eating!).
           </p><br />
 
@@ -48,20 +59,21 @@
               Estella’s goal is to inspire, educate and teach the world how to enjoy delicious meals while fueling and healing the body from within to live a long, healthy life.
             </strong><br />
           </section>
-
       </article>
 
       <footer>
         <div class="social">
           <ul>
-            <li><a target="_blank" href="https://www.instagram.com/stellhom/?hl=en"><i class="fa fa-instagram fa-3x"></i></a></li>
-            <li><a target="_blank" href="https://twitter.com/stellhom"><i class="fa fa-twitter fa-3x"></i></a></li>
-            <li><a target="_blank" href="https://www.facebook.com/estellahom"><i class="fa fa-facebook fa-3x"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/stellhom/?hl=en"><i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://twitter.com/stellhom"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/estellahom"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a target="_blank" href="mailto:me@estellahom.com"><i class="fa fa-envelope fa-2x"></i></a></li>
           </ul>
         </div>
         <div class="copyright">
-          <p id="footer-text">
-            &#169; Copyright 2016 Estella Hom, Hom Kitchen. All Rights Reserved. 
+          <p class="footer-text">
+            &#169; Copyright 2016 Estella Hom, Hom Kitchen. All Rights Reserved.
+          </p>
         </div>
       </footer>
   </body>

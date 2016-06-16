@@ -38,7 +38,6 @@ hr {
          url('fonts/Corbert-Regular-webfont.svg#corbertregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
@@ -47,10 +46,10 @@ h1 {
   letter-spacing: -2px;
   font-weight:lighter;
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 2rem;
   /*font-size: 40px;*/
   color: #10a31a;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 
 h2 {
@@ -79,7 +78,7 @@ em {
 footer {
   clear: both; /* because of the float: left on the image row above */
   background-color: hsla(0, 0%, 100%, 0.6);
-  padding: 40px 50px;
+  padding: 20px 30px;
   /* padding: 100px 150px;*/  /*for desktop*/
 }
 
@@ -132,7 +131,7 @@ header {
 }
 
 .head-logo {
-  width: 700px;
+  width: 110%;
   height: auto;
  /*position: relative;*/
   /*float: left;*/
@@ -168,7 +167,7 @@ nav {
 .navigation ul {
   list-style-type: none;
   margin: 0px;
-  padding: 10px 50px;
+  padding: 10px 20px;
   /*border-top: 1px solid darkgrey;*/
 }
 
@@ -176,22 +175,23 @@ nav {
 .navigation li {
   display: inline;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 17px;
   font-weight: bold;
-  padding: 0px 20px;
+  padding: 0px 8px;
 }
 
 .navigation a {
   color: white;
 }
 
-.navigation:hover {
-  color: purple;
+.navigation a:hover {
+  color: orange;
   text-decoration:none;
-
 }
 
-
+.navigation a:active {
+    background-color: yellow;
+}
 
 /* Image collage */
 
@@ -401,14 +401,24 @@ footer {
 .social li {
   display: inline-block;
   list-style-type: none;
-  padding: 0px 30px;
+  padding: 0px 15px;
   margin-bottom: 20px;
   margin-top: 20px;
+  text-shadow: 2px 2px 5px hsla(125, 32%, 24%, 0.75); /* adds dropshadow to text! */
+}
+
+a:hover.hover-orange {
+
 }
 
 .social li a {
   color: white;
 }
+
+.social li a:hover {
+  color: darkgreen;
+}
+
 
 .copyright {
   text-align: center;
@@ -417,10 +427,9 @@ footer {
 .footer-text {
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: bold;
-  font-size: 12px;
-  color: #0c0c0c;
+  font-size: 14px;
+  color: #294f2c;
 }
-
 
 
 .contact {
