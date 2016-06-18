@@ -27,6 +27,7 @@ strong {
 hr {
   margin: 30px 0px;
   color: lightgrey;
+  clear: both;
 }
 
 @font-face {
@@ -78,8 +79,7 @@ em {
 footer {
   clear: both; /* because of the float: left on the image row above */
   background-color: hsla(0, 0%, 100%, 0.6);
-  padding: 20px 30px;
-  /* padding: 100px 150px;*/  /*for desktop*/
+  padding: 20px 30px; /* mobile */
 }
 
 /* LINKS */
@@ -321,7 +321,7 @@ nav {
   border: 8px solid white;
   box-shadow: 4px 4px 8px #666666;
 
-  /* to center the image: */
+  /* to center the image - for mobile */
   display: block;
   margin: auto;
   margin-bottom: 20px;
@@ -330,26 +330,26 @@ nav {
 /* For photos within culinary events section - styled with border & box shadow */
 
 .photo-eventhead {
-  width: 100%;
+  max-width: 100%; /* so that it won't take up more than 100%*/
   /*width: 455px;*/
   height: auto;
   border: 7px solid white;
   border-bottom: none;
   box-shadow: 1px 1px 9px #888888;
-  margin: 0px 20px 20px 0px;
+  margin: 10px 0px 20px 0px;
   float: left;
 }
 
 .eventimgbox-left {
   display: inline;
   float: left;
-  width: 66.2%;
+  width: 65.8%;
 }
 
 .eventimgbox-right {
   display: inline;
   float: right;
-  width: 32.2%;
+  width: 32%;
 }
 
 /* EH Bio Section styles */
@@ -419,14 +419,20 @@ li {
   text-transform: uppercase;
   font-weight: bold;
   background-color: orangered;
-  padding: 10px 15px;
-  width: 200px;
+  background-image: linear-gradient(
+      180deg, #ff6f02 0%, #ff6f02 20%, #fc4902 100%
+   );
+  padding: 10px 20px;
+  width: 185px;
+  text-shadow: 2px 2px 5px hsla(19, 91%, 25%, 0.75);
   box-shadow: 2px 2px 6px 0px #888888; /*X offset, Y offset, blur radius, spread radius (optional), colour*/
 }
 
 .button:hover {
-  background-color: green;
-
+  /*background-color: #10a31a;*/
+  background-image: linear-gradient(
+      180deg, #10a31a 0%, #10a31a 20%, #097510 100%
+   );
 }
 
 /* Aside */
@@ -502,9 +508,16 @@ footer {
   float: right;
 }
 
-/* MEDIA QUERIES FOR 750px AND 1024px */
+/* MEDIA QUERIES FOR 720px */
 
-@media screen and (min-width:720px) and (min-width:1024px) {
+@media screen and (min-width:720px) {
+
+/* increase font size */
+  h1 {
+    font-size: 2.5rem;
+    /*font-size: 40px;*/
+    padding: 7px 0px;
+  }
 
   /* estella photo on about page */
   .photo-right {
@@ -512,22 +525,39 @@ footer {
     float: right;
   }
 
-  /**/
+  /* increase padding */
+  .section-bkgd,
+  .section-bio,
+  .section-events,
+  .workshop1,
+  footer {
+    padding: 50px 80px;
+  }
+
 
 
 }
 
-/* MEDIA QUERIES FOR 720px */
-
-@media screen and (min-width:720px) {
-
-
-
-}
 
 /* MEDIA QUERIES FOR 1024px */
 
 @media screen and (min-width:1024px) {
+
+/* increase font size */
+  h1 {
+    font-size: 2.75rem;
+    padding: 4px 0px;
+  }
+
+  /* increase padding */
+  .section-bkgd,
+  .section-bio,
+  .section-events,
+  .workshop1,
+  footer {
+    padding: 80px 150px;
+  }
+
 
 
 }
