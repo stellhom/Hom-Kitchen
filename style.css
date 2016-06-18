@@ -532,6 +532,7 @@ footer {
   .section-events,
   .workshops {
     padding: 50px 80px;
+    height: 100%;
   }
 
 /* increase font size & line height */
@@ -565,18 +566,27 @@ footer {
 
 /* 2 COLUMN LAYOUT FOR EVENTS SECTION */
 
-/* total width = 65%, float left */
+/* use flexbox instead of floats */
+.container-fullwidth {
+flex: 1 1 auto; /* flex grow, shrink, basis */
+display: flex;
+flex-direction: row;
+width: 100%;
+
+}
+/* total width = 65% */
   .workshops {
-    float: left;
+    /*float: left;*/
     max-width: 50%;
-    padding: 7.8% 5% 7.8% 10%; /* all paddings = %ages of 1024 */
+    padding: 5% 10% 7.8% 10%; /* all paddings = %ages of 1024 */
   }
 
-  /* total width =  35%, float right */
+  /* total width =  35% */
   .aside-section {
-    float:right;
+    /*float:right;*/
     max-width: 20%;
-    padding: 7.8% 10% 7.8% 5%;
+    padding: 5% 10% 7.8% 5%;
+    /*figure out how to make background go all the way to the bottom*/
   }
 
 }
