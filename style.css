@@ -98,7 +98,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-text-decoration: underline;
+
 }
 
 a:hover.hover-orange {
@@ -320,8 +320,11 @@ nav {
 .photo-right {
   border: 8px solid white;
   box-shadow: 4px 4px 8px #666666;
-  margin: 20px 0px 0px 20px;
-  float: right;
+
+  /* to center the image: */
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 /* For photos within culinary events section - styled with border & box shadow */
@@ -360,6 +363,7 @@ nav {
   font-family: 'Copse', serif;
   font-size: 24px;
   padding: 25px;
+  margin: 20px 0px;
 }
 
 /* CULINARY EVENTS ELEMENTS */
@@ -496,4 +500,34 @@ footer {
 .contact {
   display: inline;
   float: right;
+}
+
+/* MEDIA QUERIES FOR 750px AND 1024px */
+
+@media screen and (min-width:720px) and (min-width:1024px) {
+
+  /* estella photo on about page */
+  .photo-right {
+    margin: 8px 0px 0px 20px;
+    float: right;
+  }
+
+  /**/
+
+
+}
+
+/* MEDIA QUERIES FOR 720px */
+
+@media screen and (min-width:720px) {
+
+
+
+}
+
+/* MEDIA QUERIES FOR 1024px */
+
+@media screen and (min-width:1024px) {
+
+
 }
