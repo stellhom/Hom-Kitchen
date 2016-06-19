@@ -23,6 +23,7 @@ body {
 
 p,
 ul,
+ol,
 strong {
   font-family: effra,Avenir,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 17px;
@@ -155,7 +156,7 @@ header {
   top: 59px;
 }
 
-/* NAVIGATION ELEMENTS */
+/* ---------- NAVIGATION ELEMENTS ---------- */
 
 nav {
   clear: both;
@@ -196,7 +197,7 @@ nav {
     background-color: yellow;
 }
 
-/* Image collage */
+/* ---------- IMAGE COLLAGES ---------- */
 
 .img-row {
   width: 100%;
@@ -254,7 +255,7 @@ nav {
   width: 61.7%;
 }
 
-/* PHOTO LINKS ON HOME PAGE */
+/* ---------- PHOTO LINKS ON HOME PAGE ---------- */
 
 /* overall appearance */
 #photo-link {
@@ -352,7 +353,7 @@ nav {
   width: 32%;
 }
 
-/* EH Bio Section styles */
+/* ---------- ABOUT EH SECTION ---------- */
 
 /*.section-bio {
   padding: 50px 150px;
@@ -366,7 +367,36 @@ nav {
   margin: 20px 0px;
 }
 
-/* CULINARY EVENTS ELEMENTS */
+/* ---------- RECIPE ELEMENTS ---------- */
+
+/* makes the overflow text in list items indent */
+.recipe-list ul {
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.recipe-list li {
+  font-size: 16px;
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 1.6;
+  padding:0px 0px 0px 10px;
+}
+
+.recipe-instructions ol {
+  margin-left: 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.recipe-instructions li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  padding:0px 0px 10px 0px;
+}
+
+/* ---------- CULINARY EVENTS ELEMENTS ---------- */
 
 .section-events {
   background-color: hsla(123, 55%, 78%, 0.6);
@@ -397,17 +427,17 @@ nav {
 
 /* makes the overflow text in list items indent */
 .event-list ul {
-  list-style: none;
+  /*list-style: none;*/
   margin-left: 0;
   padding-left: 1em;
   text-indent: -1em;
 }
 
-li {
+.event-list li {
   font-size: 16px;
   list-style-type: circle;
   list-style-position: inside;
-  line-height: 1.7;
+  line-height: 1.6;
   padding:0px 0px 0px 10px;
 }
 
@@ -452,7 +482,7 @@ li {
 
 
 
-/* FOOTER ELEMENTS */
+/* ---------- FOOTER ELEMENTS ---------- */
 
 footer {
   /*display: flex;*/
@@ -511,7 +541,7 @@ footer {
   float: right;
 }
 
-/* MEDIA QUERIES FOR 720px */
+/* ---------- MEDIA QUERIES FOR 720px ---------- */
 
 @media screen and (min-width:720px) {
 
@@ -547,9 +577,18 @@ footer {
 }
 
 
-/* MEDIA QUERIES FOR 1024px */
+/* ---------- MEDIA QUERIES FOR 1024px ---------- */
 
 @media screen and (min-width:1024px) {
+
+/* smaller font size & line height */
+  p,
+  ul,
+  ol,
+  strong {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
 /* increase font size */
   h1 {
@@ -587,8 +626,6 @@ width: 180px;
 height: 160px;
 background-size: cover;
 }
-
-
 
 /* 2 COLUMN LAYOUT FOR EVENTS SECTION */
 
