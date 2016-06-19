@@ -277,8 +277,9 @@ nav {
 
 /* hover for all photo links */
 #photo-link:hover {
-  background: orangered;
-  opacity: 0.8;
+  /*background: orangered;*/ /* how do I create a translucent orange background?*/
+  /*opacity: 0.8;*/
+  border: 8px solid orangered;
   box-shadow: 2px 2px 5px hsla(0, 4%, 5%, 0.8);
 }
 
@@ -564,6 +565,31 @@ footer {
     /*padding: 80px 150px;*/
   }
 
+/* links at bottom of main page */
+.container-photo-links {
+  flex: 0 1 auto; /* flex grow, shrink, basis */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*#photo-link {
+  width: 200px;
+  height: 100px;
+  margin: 0px 10px 0px 10px;
+  background-size: cover;
+}*/
+#photo-link {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 180px;
+height: 160px;
+background-size: cover;
+}
+
+
+
 /* 2 COLUMN LAYOUT FOR EVENTS SECTION */
 
 /* use flexbox instead of floats */
@@ -578,14 +604,14 @@ width: 100%;
   .workshops {
     /*float: left;*/
     max-width: 50%;
-    padding: 5% 10% 7.8% 10%; /* all paddings = %ages of 1024 */
+    padding: 5% 5% 5% 10%; /* all paddings = %ages of 1024 */
   }
 
   /* total width =  35% */
   .aside-section {
     /*float:right;*/
     max-width: 20%;
-    padding: 5% 10% 7.8% 5%;
+    padding: 5% 10% 5% 5%;
     /*figure out how to make background go all the way to the bottom*/
   }
 
