@@ -197,6 +197,64 @@ nav {
     background-color: yellow;
 }
 
+/* ---------- PHOTO LINKS ON HOME PAGE ---------- */
+
+/* overall appearance */
+.photo-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  height: 200px;
+  padding:20px;
+  border: 8px solid #e0dede;
+  margin: 20px 0px;
+  background-size: cover;
+}
+
+/*#photo-link a {
+   padding: 5px 10px;
+   background: green;
+   transition: background 0.3s ease 0.5s;
+ }*/
+
+/* hover for all photo links */
+.photo-link:hover {
+  /*background: orangered;*/ /* how do I create a translucent orange background?*/
+  /*opacity: 0.8;*/
+  border: 8px solid orangered;
+  box-shadow: 2px 2px 5px hsla(0, 4%, 5%, 0.8);
+}
+
+/* titles */
+.photo-link-title {
+  font-weight: bold;
+  font-size: 2em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: white;
+  text-shadow: 2px 2px 5px hsla(0, 4%, 5%, 0.8);
+}
+
+.recipe-link {
+  background: url(images/links/link-recipes.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.event-link {
+  background: url(images/links/link-events.jpg) no-repeat;
+  background-position: top left;
+  background-size: cover;
+
+}
+
+.estella-link {
+  background: url(images/links/link-estella.jpg) no-repeat;
+  background-position: top left;
+  background-size: cover;
+}
+
 /* ---------- IMAGE COLLAGES ---------- */
 
 .img-row {
@@ -255,59 +313,6 @@ nav {
   width: 61.7%;
 }
 
-/* ---------- PHOTO LINKS ON HOME PAGE ---------- */
-
-/* overall appearance */
-#photo-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 100%;
-  height: 200px;
-  padding:20px;
-  border: 8px solid #e0dede;
-  margin: 20px 0px;
-  background-size: cover;
-}
-
-/*#photo-link a {
-   padding: 5px 10px;
-   background: green;
-   transition: background 0.3s ease 0.5s;
- }*/
-
-/* hover for all photo links */
-#photo-link:hover {
-  /*background: orangered;*/ /* how do I create a translucent orange background?*/
-  /*opacity: 0.8;*/
-  border: 8px solid orangered;
-  box-shadow: 2px 2px 5px hsla(0, 4%, 5%, 0.8);
-}
-
-/* titles */
-.photo-link-title {
-  font-weight: bold;
-  font-size: 2em;
-  text-transform: uppercase;
-  line-height: 1.1;
-  color: white;
-  text-shadow: 2px 2px 5px hsla(0, 4%, 5%, 0.8);
-}
-
-.recipe-link {
-  background: url(images/links/link-recipes.jpg) no-repeat;
-  background-position: top left;
-}
-
-.event-link {
-  background: url(images/links/link-events.jpg) no-repeat;
-  background-position: top left;
-}
-
-.estella-link {
-  background: url(images/links/link-estella.jpg) no-repeat;
-  background-position: top left;
-}
 
 /* For photos within body text - styled with border & box shadow */
 
@@ -507,15 +512,15 @@ footer {
   padding: 20px 30px; /* mobile */
 }
 
-.social {
+#social {
   display: flex;
   justify-content: space-around;
 }
-.social ul {
+#social ul {
   text-align: center;
 }
 
-.social li {
+#social li {
   display: inline-block;
   list-style-type: none;
   padding: 0px 15px;
@@ -524,11 +529,11 @@ footer {
   text-shadow: 2px 2px 5px hsla(125, 32%, 24%, 0.75); /* adds dropshadow to text! */
 }
 
-.social li a {
+#social li a {
   color: white;
 }
 
-.social li a:hover {
+#social li a:hover {
   color: #cdf7d9;
 }
 
@@ -544,7 +549,6 @@ footer {
   color: #294f2c;
   text-shadow: 1px 1px 2px hsla(128, 83%, 87%, 0.7); /* adds dropshadow to text! */
 }
-
 
 .contact {
   display: inline;
@@ -622,19 +626,14 @@ footer {
   justify-content: space-between;
 }
 
-/*#photo-link {
-  width: 200px;
-  height: 100px;
-  margin: 0px 10px 0px 10px;
-  background-size: cover;
-}*/
-#photo-link {
+.photo-link {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
+background-size: cover;
 width: 180px;
 height: 160px;
-background-size: cover;
+margin: 0px;
 }
 
 /* 2 COLUMN LAYOUT FOR EVENTS SECTION */
@@ -663,3 +662,14 @@ width: 100%;
   }
 
 }
+
+
+
+To do list:
+heading images for:
+- contact page
+- recipe page
+Add active state to nav
+Revise nav rollover states
+Nav for screen size 1024px
+Style contact form
