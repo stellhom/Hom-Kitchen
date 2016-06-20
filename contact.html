@@ -6,9 +6,10 @@
     <title>Hom Kitchen | Cooking delicious food since 1980</title>
       <link rel="stylesheet" type="text/css" href="reset.css" />
       <link rel="stylesheet" type="text/css" href="style.css" />
-      <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
       <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:700' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+      <script src="scripts/gen_validatorv31.js"></script>
   </head>
 
   <body>
@@ -110,6 +111,38 @@
             <p class="event-text">
               For tips, recipes, and daily inspiration, follow me on <a target="_blank" href="https://www.instagram.com/stellhom/?hl=en">Instagram</a>, <a target="_blank" href="https://twitter.com/stellhom">Twitter</a>, and <a target="_blank" href="https://www.facebook.com/estellahom">Facebook</a>
             </p>
+            <div id="contact-head">
+              <h1 id="main-title">Contact</h1>
+            </div>
+            <div id="con-head">
+              <h2 class="sub-title">Contact Me</h2>
+            </div>
+            <div id="com-email">
+              <p><span id="com-text">Send me your comments!</span></p>
+              <form action="email-comments.php" method="post" name="emailform">
+                <label>
+                  Your Name:
+                  <input type="text" name="vis-name" />
+                </label>
+                <br />
+                <label>
+                  Your Email:
+                  <input type="text" name="vis-email" />
+                </label>
+                <br />
+                <label>
+                  Comments:
+                  <textarea rows="4" cols="20" name="comment"></textarea>
+                  <input type="submit" name="submit-e" value="Submit" />
+                </label>
+              </form>
+            </div>
+            <script>
+              var frmvalidator  = new Validator("emailform");
+              frmvalidator.addValidation("vis-name","req","Please provide your name.");
+              frmvalidator.addValidation("vis-email","req","Please provide your email.");
+              frmvalidator.addValidation("email","email","Please enter a valid email address.");
+            </script>
         </div>
       </section>
       </article>

@@ -321,11 +321,21 @@ nav {
 .photo-right {
   border: 8px solid white;
   box-shadow: 4px 4px 8px #666666;
-
   /* to center the image - for mobile */
   display: block;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.photo-center {
+  max-width: 100%; /* so that it won't take up more than 100%*/
+  height: auto;
+  border: 8px solid white;
+  box-shadow: 1px 1px 9px #888888;
+  /*float: left;*/
+  /* to center the image - for mobile */
+  margin: auto;
+  margin: 20px 0px 20px 0px;
 }
 
 /* For photos within culinary events section - styled with border & box shadow */
