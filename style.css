@@ -1,4 +1,4 @@
-/* UNIVERSAL STYLES */
+/* ---------- UNIVERSAL STYLES ---------- */
 
 body {
   background-image:url('images/scalloppattern.png');
@@ -29,7 +29,6 @@ strong {
   font-size: 17px;
   color: #0c0c0c;
   line-height: 1.6;
-  /*line-height: 1.75;*/
 }
 
 h1 {
@@ -66,12 +65,6 @@ hr {
   clear: both;
 }
 
-/*.main-title {
-  font-family: serif;
-  font-size: 50px;
-  position: relative;
-}*/
-
 /* same padding for all sections */
 .section-bkgd,
 .section-bio,
@@ -82,7 +75,7 @@ hr {
   padding: 20px 30px; /* mobile */
 }
 
-/* LINKS */
+/* ---------- LINKS ---------- */
 
 /* unvisited link */
 a:link {
@@ -114,7 +107,7 @@ a:active {
   text-decoration: none;
 }
 
-/* HEADER ELEMENTS */
+/* ---------- HEADER ELEMENTS ----------*/
 
 /* main container */
 header {
@@ -537,7 +530,6 @@ footer {
   color: #cdf7d9;
 }
 
-
 .copyright {
   text-align: center;
 }
@@ -609,6 +601,7 @@ footer {
     font-size: 2.75rem;
     padding: 4px 0px;
   }
+
 
   /* increase padding */
   .section-bkgd,
