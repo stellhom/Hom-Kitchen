@@ -37,7 +37,6 @@ h1 {
   font-weight:lighter;
   text-transform: uppercase;
   font-size: 2rem;
-  /*font-size: 40px;*/
   color: #10a31a;
   padding: 10px 0px;
 }
@@ -46,7 +45,6 @@ h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
-  /*font-size: 20px;*/
   line-height: 1.5;
 }
 
@@ -90,10 +88,13 @@ a:visited {
 }
 
 /* mouse over link */
-a:hover {
-
+.recipe-index a:hover {
+text-decoration: underline;
 }
 
+a:hover.norollover {
+  text-decoration: none;
+}
 a:hover.hover-orange {
   color: white;
   background-color: orangered;
@@ -119,7 +120,6 @@ header {
   /*justify-content: space-between;*/ /*use for hom kitchen left and cooking since 1980 right*/
   /*align-items: center;*/ /*use for hom kitchen left and cooking since 1980 right*/
   padding: 20px 0px;
-
 }
 
 /*remove this class - target header tag instead - is this better than creating a class?*/
@@ -412,7 +412,8 @@ nav {
   /*padding: 50px 150px;*/
 }
 
-.workshops {
+.workshops,
+.recipes {
   /*float: left;*/
   /*background-color: hsla(0, 0%, 100%, 0.6);*/
   /*padding-left: 150px;
@@ -483,7 +484,8 @@ input[type="submit"]:hover
 }
 
 /* Aside */
-.aside-section {
+.aside-event,
+.aside-recipe {
   /*width: 310px;*/
   /*float:right;*/
   background-color: hsla(0, 0%, 100%, 0.6);
@@ -710,7 +712,6 @@ flex: 1 1 auto; /* flex grow, shrink, basis */
 display: flex;
 flex-direction: row;
 width: 100%;
-
 }
 /* total width = 65% */
   .workshops {
@@ -720,20 +721,31 @@ width: 100%;
   }
 
   /* total width =  35% */
-  .aside-section {
+
+  .aside-event {
     /*float:right;*/
     max-width: 20%;
     padding: 5% 10% 5% 5%;
     /*figure out how to make background go all the way to the bottom*/
   }
 
+  .recipes {
+    /*float: right;*/
+    max-width: 50%;
+    padding: 5% 10% 5% 5%; /* all paddings = %ages of 1024 */
+  }
+
+  .aside-recipe {
+    /*float:left;*/
+    max-width: 20%;
+    padding: 5% 5% 5% 10%;
+  }
 }
 
 
 
 To do list:
 heading images for:
-- contact page
 - recipe page
 Add active state to nav
 Revise nav rollover states
