@@ -473,7 +473,6 @@ input[type="submit"] {
   box-shadow: 2px 2px 6px 0px #888888; /*X offset, Y offset, blur radius, spread radius (optional), colour*/
 }
 
-
 .button:hover,
 input[type="submit"]:hover
  {
@@ -546,11 +545,11 @@ textarea {
 }
 
 input[type="text"] {
-  width: 50%;
+  width: 95%;
 }
 
 textarea {
-  width: 98%;
+  width: 95%;
 }
 
 
@@ -645,7 +644,14 @@ footer {
     line-height: 1;
   }
 
+/* width of contact form fields */
+  input[type="text"] {
+    width: 50%;
+  }
 
+  textarea {
+    width: 80%;
+  }
 
 }
 
@@ -732,4 +738,3 @@ heading images for:
 Add active state to nav
 Revise nav rollover states
 Nav for screen size 1024px
-Style contact form
