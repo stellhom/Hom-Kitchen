@@ -138,9 +138,12 @@ header {
   z-index: 100;*/
 }
 
+/* transition: logo will scale when rolled over */
 .head-logo:hover {
   color: white;
   text-decoration: none;
+  transform: rotate(0deg) scale(1.2);
+  transition: transform 0.5s ease;
 }
 
 .head-subtitle {
