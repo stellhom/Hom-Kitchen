@@ -98,6 +98,7 @@ a:hover.hover-orange {
   color: white;
   background-color: orangered;
   text-decoration: none;
+  padding: 0px 5px;
 }
 
 /* selected link */
@@ -449,25 +450,33 @@ nav {
   padding:0px 0px 0px 10px;
 }
 
-.button {
+/* ---------- BUTTONS ---------- */
+
+.button,
+input[type="submit"] {
   display: block;
   font-family: effra, Avenir, "Helvetica Neue", Helvetica,Arial,sans-serif;
   font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
   border-radius: 8px;
   color: white;
-  text-transform: uppercase;
-  font-weight: bold;
+  cursor: pointer;
   background-color: orangered;
   background-image: linear-gradient(
       180deg, #ff6f02 0%, #ff6f02 20%, #fc4902 100%
    );
-  padding: 10px 20px;
+  padding: 10px 15px;
+  border: 0px;
   width: 185px;
   text-shadow: 2px 2px 5px hsla(19, 91%, 25%, 0.75);
   box-shadow: 2px 2px 6px 0px #888888; /*X offset, Y offset, blur radius, spread radius (optional), colour*/
 }
 
-.button:hover {
+
+.button:hover,
+input[type="submit"]:hover
+ {
   /*background-color: #10a31a;*/
   background-image: linear-gradient(
       180deg, #10a31a 0%, #10a31a 20%, #097510 100%
@@ -487,6 +496,62 @@ nav {
   color: black;
   font-size: 26px;
 }*/
+
+/* ---------- CONTACT FORM ---------- */
+
+.contact-form {
+  width: 100%;
+  margin: 20px 0px;
+  /*margin: 20px auto 20px;*/
+  /*padding: 20px;*/
+}
+
+.contact-form > div {
+  margin: 20px 0px 20px 0px;
+}
+
+label {
+  color: #262873;
+  font-weight: bold;
+}
+
+label[for="vis-name"],
+label[for="vis-email"],
+label[for="comment"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+textarea {
+  border: 1px solid #c8c8c8;
+  color: #464646;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #afafaf;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+input[type="text"] {
+  width: 50%;
+}
+
+textarea {
+  width: 98%;
+}
 
 
 
@@ -546,6 +611,8 @@ footer {
   display: inline;
   float: right;
 }
+
+
 
 /* ---------- MEDIA QUERIES FOR 720px ---------- */
 
