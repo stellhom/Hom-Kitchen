@@ -103,11 +103,11 @@ a:hover.hover-orange {
 }
 
 /* selected link */
-a:active {
+/*a:active {
   color: orangered;
   background-color: white;
   text-decoration: none;
-}
+}*/
 
 /* ---------- HEADER ELEMENTS ----------*/
 
@@ -187,9 +187,9 @@ nav {
   text-decoration:none;
 }
 
-.navigation a:active {
+/*.navigation a:active {
     background-color: yellow;
-}
+}*/
 
 /* ---------- PHOTO LINKS ON HOME PAGE ---------- */
 
